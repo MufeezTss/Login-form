@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="task.css">
+    <link rel="stylesheet" href="login.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <title>Document</title>
@@ -66,26 +66,59 @@
 
     <!-- Form -->
 
-    <div class="container shadow p-3 mb-5 bg-light rounded col-lg-4 col-sm-6 rounded mt-5 mb-5 ">
+    <div class="container shadow p-3 mb-5 bg-light rounded col-lg-4 col-sm-6 rounded mt-3 mb-5 ">
 
-        <form onsubmit="myFunc()" class="container col-md-8 col-sm-6">
+        <form action="data.html" onsubmit="myFunc(event)" class="container col-md-8 col-sm-6">
 
-            <h4 class="text-center">Login</h4>
+            <h4 class="text-center">Register</h4>
 
             <div class="mb-3 mt-4">
                 <label class="form-label">Name</label>
-                <input type="text" class="form-control shadow p-3 mb-5 bg-body" id="name" placeholder="Enter Your Name">
+                <input type="text" 
+                class="form-control shadow p-3 mb-5 bg-body" 
+                id="name" 
+                name="name"
+                placeholder="Enter Your Name"
+                 required> 
             </div>
+
             <div class="mb-3">
                 <label class="form-label text-info font-s">Email</label>
-                <input type="email" class="form-control shadow p-3 mb-5 bg-body" id="email" aria-describedby="emailHelp"
-                    placeholder="Enter Your Email">
+                <input type="email" 
+                class="form-control shadow p-3 mb-5 bg-body" 
+                id="email" 
+                name="email"
+                placeholder="Enter Your Email" 
+                required>
             </div>
+
+            <div class="mb-3">
+                <label class="form-label">Contact</label>
+                <input type="text" 
+                class="form-control shadow p-3 mb-5 bg-body" 
+                id="contact"
+                name="contact"
+                placeholder="Enter Your Contact">
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Date Of Birth</label>
+                <input type="date" 
+                class="form-control shadow p-3 mb-5 bg-body" 
+                id="date"
+                name="date"
+                placeholder="Enter Your DOB">
+            </div>
+
             <div class="mb-3">
                 <label class="form-label">Password</label>
-                <input type="password" class="form-control shadow p-3 mb-5 bg-body" id="pass"
-                    placeholder="Enter Your Password">
+                <input type="password" 
+                class="form-control shadow p-3 mb-5 bg-body" 
+                id="password"
+                name="password"
+                placeholder="Enter Your Password">
             </div>
+
             <button type="submit" class="btn btn-primary mb-4 ">Submit</button>
 
         </form>
@@ -94,7 +127,7 @@
 
     <!-- Form End -->
 
-    <script src="task.js"></script>
+    <script src="login.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
         integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
