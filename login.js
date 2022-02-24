@@ -1,5 +1,5 @@
 
-const myFunc = e => {
+const myFunc = () => {
 
   const  name = document.getElementById('name').value;
   const  email = document.getElementById('email').value;
@@ -13,7 +13,8 @@ const myFunc = e => {
   localStorage.setItem('contact',contact);
   localStorage.setItem('date',date);
   localStorage.setItem('password',password);
-  
+    
   return;
+  
 }
 

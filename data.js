@@ -13,6 +13,5 @@ window.addEventListener('load', () => {
     document.getElementById('contact').innerHTML = contact;
     document.getElementById('date').innerHTML = date;
     document.getElementById('password').innerHTML = password;
-
 })
 
