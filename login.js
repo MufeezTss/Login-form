@@ -13,8 +13,6 @@ const myFunc = () => {
   localStorage.setItem('contact',contact);
   localStorage.setItem('date',date);
   localStorage.setItem('password',password);
-    
-  return;
   
 }
 
