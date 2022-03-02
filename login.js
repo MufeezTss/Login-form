@@ -25,6 +25,7 @@ window.addEventListener('load', () => {
   const contact =params.get('contact');
   const date = params.get('date');
   const password =params.get('password');
+
   
   document.getElementById('name').innerHTML = name;
   document.getElementById('email').innerHTML = email;
